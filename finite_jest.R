@@ -17,7 +17,6 @@ finite$textrank_id <- unique_identifier(finite, c("doc_id",
                                                   "sentence_id"))
 
 sentences <- unique(finite[, c("textrank_id", "sentence")])
-terminology <- subset(finite, upos %in% c("NOUN", "ADJ"))
 terminology <- terminology[, c("textrank_id", "lemma")]
 head(terminology)
 
